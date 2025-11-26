@@ -1,0 +1,50 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+/ {
+    chosen { zmk,matrix-transform = &dactyl_manuform_number_row;
+    };
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+ &kp EQUAL    &kp N1    &kp N2    &kp N3    &kp N4  &kp N5                                         &kp N6      &kp N7     &kp N8    &kp N9   &kp N0   &kp MINUS
+ &kp TAB    &kp Q     &kp W     &kp E     &kp R   &kp T                                          &kp Y       &kp U      &kp I     &kp O    &kp P    &kp BSLH
+ &kp LCTRL  &kp A     &kp S     &kp D     &kp F   &kp G                                          &kp H       &kp J      &kp K     &kp L    &kp SEMI &kp SQT
+ &kp LSHFT  &kp Z     &kp X     &kp C     &kp V   &kp B                                          &kp N       &kp M      &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+ &kp LGUI  &kp LALT     &kp LGUI  &kp LALT                                                                                &kp LBKT  &kp RBKT &kp LBKT  &kp RBKT
+                                                  &kp RET &kp DEL  &kp ESC    &kp GRAVE &kp BSPC &kp SPACE
+                                                  &kp RET &kp DEL  &kp ESC    &kp GRAVE &kp BSPC &kp SPACE
+            >;
+        };
+
+        Layer__1 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans   &trans   &trans    &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &kp HOME &kp UP   &kp END   &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans   &trans   &trans    &trans  &trans
+ &trans  &trans  &trans  &trans                                                                      &trans   &trans    &trans  &trans
+                                      &trans  &trans &trans       &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
+                                      &trans  &trans &trans       &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
+            >;
+        };
+
+        Layer__2 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans
+                                         &trans  &trans &trans        &trans &trans &trans
+                                         &trans  &trans &trans        &trans &trans &trans
+            >;
+        };
+    };
+};
