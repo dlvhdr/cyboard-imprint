@@ -14,25 +14,25 @@
 
         default_layer {
             bindings = <
-//    ┌──────┬─────┬──────┬──────┬─────┬───┐                                             ┌───┬─────┬───┬───┬─────┬──────┐
-//    │ tab  │  Q  │  W   │  E   │  R  │ T │                                             │ Y │  U  │ I │ O │  P  │  \   │
-//    ├──────┼─────┼──────┼──────┼─────┼───┤                                             ├───┼─────┼───┼───┼─────┼──────┤
-//    │ lctl │  A  │  S   │  D   │  F  │ G │                                             │ H │  J  │ K │ L │  ;  │  '   │
-//    ├──────┼─────┼──────┼──────┼─────┼───┤                                             ├───┼─────┼───┼───┼─────┼──────┤
-//    │ lsft │  Z  │  X   │  C   │  V  │ B │                                             │ N │  M  │ , │ . │  /  │ rsft │
-//    ├──────┼─────┼──────┼──────┼─────┼───┘                                             └───┼─────┼───┼───┼─────┼──────┤
-//    │      │     │ lgui │ lalt │     │                                                     │     │ [ │ ] │     │      │
-//    └──────┴─────┴──────┴──────┴─────┘   ┌──────┬──────┬──────┐   ┌──────┬──────┬──────┐   └─────┴───┴───┴─────┴──────┘
-//                                         │ ent  │ del  │ esc  │   │  `   │ bspc │ spc  │
-//                                         ├──────┼──────┼──────┤   ├──────┼──────┼──────┤
-//                                         │ lgui │ mo 1 │ mo 2 │   │ caps │ mo 2 │ mo 1 │
-//                                         └──────┴──────┴──────┘   └──────┴──────┴──────┘
-  &kp TAB     &kp Q    &kp W      &kp E      &kp R    &kp T                                                                         &kp Y   &kp U    &kp I       &kp O      &kp P      &kp BSLH
-  &kp LCTRL   &kp A    &kp S      &kp D      &kp F    &kp G                                                                         &kp H   &kp J    &kp K       &kp L      &kp SEMI   &kp SQT
-  &kp LSHFT   &kp Z    &kp X      &kp C      &kp V    &kp B                                                                         &kp N   &kp M    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
-  &trans      &trans   &kp LGUI   &kp LALT   &trans                                                                                         &trans   &kp LBKT    &kp RBKT   &trans     &trans
-                                                              &kp RET    &kp DEL   &kp ESC       &kp GRAVE   &kp BSPC   &kp SPACE
-                                                              &kp LGUI   &mo 1     &mo 2         &kp CAPS    &mo 2      &mo 1
+//    ┌─────┬───────────┬──────┬──────┬─────┬───┐                                             ┌───┬─────┬───┬───┬───────────┬──────┐
+//    │ tab │     Q     │  W   │  E   │  R  │ T │                                             │ Y │  U  │ I │ O │     P     │  \   │
+//    ├─────┼───────────┼──────┼──────┼─────┼───┤                                             ├───┼─────┼───┼───┼───────────┼──────┤
+//    │ esc │ mt lgui A │  S   │  D   │  F  │ G │                                             │ H │  J  │ K │ L │ mt rgui ; │  '   │
+//    ├─────┼───────────┼──────┼──────┼─────┼───┤                                             ├───┼─────┼───┼───┼───────────┼──────┤
+//    │     │     Z     │  X   │  C   │  V  │ B │                                             │ N │  M  │ , │ . │     /     │ rsft │
+//    ├─────┼───────────┼──────┼──────┼─────┼───┘                                             └───┼─────┼───┼───┼───────────┼──────┤
+//    │     │           │ lgui │ lalt │     │                                                     │     │ [ │ ] │           │      │
+//    └─────┴───────────┴──────┴──────┴─────┘   ┌──────┬──────┬──────┐   ┌──────┬──────┬──────┐   └─────┴───┴───┴───────────┴──────┘
+//                                              │ ent  │ del  │ esc  │   │  `   │ bspc │ spc  │
+//                                              ├──────┼──────┼──────┤   ├──────┼──────┼──────┤
+//                                              │ lgui │ mo 1 │ mo 2 │   │ caps │ mo 2 │ mo 1 │
+//                                              └──────┴──────┴──────┘   └──────┴──────┴──────┘
+  &kp TAB   &kp Q        &kp W      &kp E      &kp R    &kp T                                                                         &kp Y   &kp U    &kp I       &kp O      &kp P           &kp BSLH
+  &kp ESC   &mt LGUI A   &kp S      &kp D      &kp F    &kp G                                                                         &kp H   &kp J    &kp K       &kp L      &mt RGUI SEMI   &kp SQT
+  &trans    &kp Z        &kp X      &kp C      &kp V    &kp B                                                                         &kp N   &kp M    &kp COMMA   &kp DOT    &kp FSLH        &kp RSHFT
+  &trans    &trans       &kp LGUI   &kp LALT   &trans                                                                                         &trans   &kp LBKT    &kp RBKT   &trans          &trans
+                                                                &kp RET    &kp DEL   &kp ESC       &kp GRAVE   &kp BSPC   &kp SPACE
+                                                                &kp LGUI   &mo 1     &mo 2         &kp CAPS    &mo 2      &mo 1
             >;
         };
 
