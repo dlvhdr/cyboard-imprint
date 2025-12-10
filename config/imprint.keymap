@@ -6,7 +6,12 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
+    chosen { zmk,matrix-transform = &imprint_letters_only_full_bottom_row; };
     behaviors {
         hrm_l: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -54,15 +59,6 @@
             hold-trigger-on-release;
         };
     };
-};
-
-
-&caps_word {
-    continue-list = <UNDERSCORE MINUS>;
-};
-
-/ {
-    chosen { zmk,matrix-transform = &imprint_letters_only_full_bottom_row; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -260,6 +256,7 @@
         };
     };
 };
+
 
 // right hand trackball configuration
 &trackball_peripheral_listener {
