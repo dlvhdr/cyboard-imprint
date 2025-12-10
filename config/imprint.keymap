@@ -19,7 +19,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = KEYS_R;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
         hrm_ls: home_row_mod_left_short {
@@ -30,7 +30,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = KEYS_R;
+            hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
         };
         hrm_r: home_row_mod_right {
@@ -41,7 +41,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = KEYS_L;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
       
@@ -53,7 +53,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = KEYS_L;
+            hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
         };
     };
