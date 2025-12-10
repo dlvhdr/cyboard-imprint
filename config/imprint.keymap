@@ -6,6 +6,9 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 51 52
+#define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 53 54 55 56 57
+
 / {
     behaviors {
         hrm_l: home_row_mod_left {
@@ -14,10 +17,10 @@
             flavor = "balanced";
             require-prior-idle-ms = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <300>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            // hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
-            // hold-trigger-on-release;
+            hold-trigger-key-positions = KEYS_R;
+            hold-trigger-on-release;
         };
         hrm_ls: home_row_mod_left_short {
             compatible = "zmk,behavior-hold-tap";
@@ -25,10 +28,10 @@
             flavor = "balanced";
             require-prior-idle-ms = <0>;
             tapping-term-ms = <180>;
-            quick-tap-ms = <300>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            // hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
-            // hold-trigger-on-release;
+            hold-trigger-key-positions = KEYS_R;
+            hold-trigger-on-release;
         };
         hrm_r: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
@@ -36,10 +39,10 @@
             flavor = "balanced";
             require-prior-idle-ms = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <300>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            // hold-trigger-key-positions = < ... >; // List of keys on the left side of the keyboard
-            // hold-trigger-on-release;
+            hold-trigger-key-positions = KEYS_L;
+            hold-trigger-on-release;
         };
       
         hrm_rs: home_row_mod_right_short {
@@ -48,10 +51,10 @@
             flavor = "balanced";
             require-prior-idle-ms = <0>;
             tapping-term-ms = <180>;
-            quick-tap-ms = <300>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            // hold-trigger-key-positions = < ... >; // List of keys on the left side of the keyboard
-            // hold-trigger-on-release;
+            hold-trigger-key-positions = KEYS_L;
+            hold-trigger-on-release;
         };
     };
 };
