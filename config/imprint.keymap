@@ -9,6 +9,8 @@
 // https://getreuer.info/posts/keyboards/faqs/index.html#home-row-mods-are-hard-to-use
 #define IDLE_MS 80
 #define IDLE_SHORT_MS 50
+#define QUICK_TAP_MS 175
+#define QUICK_TAP_SHORT_MS 140
 #define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43 44 45
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40
 
@@ -25,7 +27,7 @@
             flavor = "balanced";
             require-prior-idle-ms = <IDLE_MS>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <QUICK_TAP_MS>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
@@ -36,7 +38,7 @@
             flavor = "balanced";
             require-prior-idle-ms = <IDLE_SHORT_MS>;
             tapping-term-ms = <180>;
-            quick-tap-ms = <120>;
+            quick-tap-ms = <QUICK_TAP_SHORT_MS>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R>;
             hold-trigger-on-release;
@@ -47,7 +49,7 @@
             flavor = "balanced";
             require-prior-idle-ms = <IDLE_MS>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <QUICK_TAP_MS>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
@@ -59,7 +61,7 @@
             flavor = "balanced";
             require-prior-idle-ms = <IDLE_SHORT_MS>;
             tapping-term-ms = <180>;
-            quick-tap-ms = <120>;
+            quick-tap-ms = <QUICK_TAP_SHORT_MS>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L>;
             hold-trigger-on-release;
