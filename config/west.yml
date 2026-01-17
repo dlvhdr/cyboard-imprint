@@ -11,9 +11,8 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: zmk-keyboards
+    - name: zmk-pmw3610-driver
       remote: Cyboard-DigitalTailor
-      revision: 2ca5109587593f26c7ebecc464a7a605851b9917
-      import: config/west.yml
+      revision: startup_optimization
   self:
     path: config
