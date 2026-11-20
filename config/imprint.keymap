@@ -25,7 +25,7 @@
 };
 
 / {
-    chosen { zmk,matrix-transform = &imprint_letters_only_full_bottom_row; };
+    chosen { zmk,physical-layout = &physical_layout_imprint_letters_only_full_bottom_row; };
     behaviors {
         hrm_l: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
